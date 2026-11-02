@@ -1,15 +1,36 @@
 import './App.css';
 import Post from './components/Post';
+import React, { useState } from 'react';
 
 function App() {
+  const [posts, setPosts] = useState([
+    {
+      username: "TWD",
+      caption: "&#x1F525;Build a Messaging app with MERN Stack&#x1F525;",
+      imageUrl: "https://th.bing.com/th?id=OIF.rOZ78lzIKyBVcZX%2f6%2fqqOA&w=303&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+      number: 1
+    },
+    {
+      username: "nabendu82",
+      caption: "Such a beautiful world",
+      imageUrl: "https://quotefancy.com/media/wallpaper/3840x2160/126631-Charles-Dickens-Quote-And-a-beautiful-world-you-live-in-when-it-is.jpg",
+      number: 2
+     }
+  ])
   return (
     <div className="App">
       <div className="app__header">
         <img className="app__headerImage" src="https://cdn.pixabay.com/photo/2025/02/04/23/03/fish-9382908_1280.jpg" alt="Header" />
       </div>
-      <Post />
-      <Post />
-      <Post />
+      {posts.map((post, index) => (
+        <Post
+          key={index}
+          username={post.username}
+          caption={post.caption}
+          imageUrl={post.imageUrl}
+          number={post.number}
+        />
+      ))}
     </div>
   );
 }
