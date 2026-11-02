@@ -6,8 +6,8 @@ function App() {
   const [posts, setPosts] = useState([
     {
       username: "TWD",
-      caption: "&#x1F525;Build a Messaging app with MERN Stack&#x1F525;",
-      imageUrl: "https://th.bing.com/th?id=OIF.rOZ78lzIKyBVcZX%2f6%2fqqOA&w=303&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+      caption: "Build a Messaging app with MERN Stack&#x1F525;",
+      imageUrl: "https://cdn.pixabay.com/photo/2025/02/04/23/03/fish-9382908_1280.jpg",
       number: 1
     },
     {
