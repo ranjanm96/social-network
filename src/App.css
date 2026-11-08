@@ -16,3 +16,8 @@
   height: 40px;
   max-height: 200px;
 }
+
+.app__signup {
+  display: flex;
+  flex-direction: column;
+}
